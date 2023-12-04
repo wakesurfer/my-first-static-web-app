@@ -13,10 +13,9 @@ function App() {
     // Autentiseringskoden här
   }, []);
 
-  return (
-    <div className="App">
-      {/* Din app-innehåll här */}
-      return <div>Hello Static 6 !!!</div>;
+  <div className="App">
+    {/* Din app-innehåll här */}
+    return <div>Hello Static 6 !!!</div>;
 
     </div>
   );
