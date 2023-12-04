@@ -1,10 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 function App() {
-  useEffect(() => {
-    // Autentiseringskoden här
-  }, []);
-
   return (
     <div className="App">
       {/* Din app-innehåll här */}
