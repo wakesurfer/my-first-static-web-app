@@ -16,6 +16,8 @@ function App() {
   return (
     <div className="App">
       {/* Din app-innehåll här */}
+      return <div>Hello Static 6 !!!</div>;
+
     </div>
   );
 
