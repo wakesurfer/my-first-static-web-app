@@ -11,6 +11,10 @@
     {
       "route": "/*",
       "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/*",
+      "allowedRoles": ["Reader"]
     }
   ],
   "auth": {
