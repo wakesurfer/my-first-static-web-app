@@ -1,12 +1,23 @@
 {
-    "navigationFallback": {
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/f84f6fe6-b0e4-4db1-b7d6-b7c280fb507f/oauth2/v2.0/",
+          "clientIdSettingName": "b6361d6c-2fa1-4fc4-b22c-7566604da73e",
+          "clientSecretSettingName": "Td78Q~h6-FhqCmodVU7tChBU6qqcNaj1C_Q7DcXQ"
+        }
+      }
+    }
+  }
+  "navigationFallback": {
         "rewrite": "/index.html"
     }
     ,
     "routes": [
         {
           "route": "/*",
-          "allowedRoles": ["Reader"]
+          "allowedRoles": ["reader"]
         }
       ],
       "responseOverrides": {
