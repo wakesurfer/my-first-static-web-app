@@ -11,12 +11,12 @@
     {
       "route": "/*",
       "allowedRoles": ["authenticated"]
-  },
-  {
-    "route": "/*",
-    "allowedRoles": ["Reader"]
-}
-],
+    },
+    {
+      "route": "/*",
+      "allowedRoles": ["Reader"]
+    } 
+  ],
   "auth": {
     "identityProviders": {
       "azureActiveDirectory": {
