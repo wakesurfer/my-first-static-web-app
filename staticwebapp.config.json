@@ -9,10 +9,14 @@
         "redirect": "/.auth/logout"
     },
     {
-        "route": "/*",
-        "allowedRoles": ["Reader"]
-    }
-    ],
+      "route": "/*",
+      "allowedRoles": ["authenticated"]
+  },
+  {
+    "route": "/*",
+    "allowedRoles": ["Reader"]
+}
+],
   "auth": {
     "identityProviders": {
       "azureActiveDirectory": {
