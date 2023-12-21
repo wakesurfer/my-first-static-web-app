@@ -15,7 +15,7 @@
     {
       "route": "/*",
       "allowedRoles": ["Reader"]
-    } 
+    }
   ],
   "auth": {
     "identityProviders": {
@@ -40,4 +40,3 @@
         }
       }
 }
-
