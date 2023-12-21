@@ -25,7 +25,7 @@
       },
       {
           "route": "/*",
-          "allowedRoles": ["reader"]
+          "allowedRoles": ["Reader"]
       }
       ],
       "responseOverrides": {
