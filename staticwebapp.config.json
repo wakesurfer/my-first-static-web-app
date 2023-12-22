@@ -1,38 +1,28 @@
 {
   "routes": [
-    {
-      "route": "/login",
-      "redirect": "/.auth/login/aad"
-    },
-    {
-        "route": "/logout",
-        "redirect": "/.auth/logout"
-    },
-    {
-      "route": "/*",
-      "allowedRoles": ["authenticated"]
-    }
+      {
+          "route": "/*",
+          "allowedRoles": [ "authenticated" ]
+      }
   ],
-  "auth": {
-    "identityProviders": {
-      "azureActiveDirectory": {
-        "registration": {
-          "openIdIssuer": "https://login.microsoftonline.com/f84f6fe6-b0e4-4db1-b7d6-b7c280fb507f/oauth2/v2.0/",
-          "clientIdSettingName": "AZURE_CLIENT_ID",
-          "clientSecretSettingName": "AZURE_CLIENT_SECRET"
+  "responseOverrides": {
+  "401": {
+    "statusCode": 302,
+    "redirect": "/.auth/login/aad"
+  }
+},
+    "auth": {
+      "identityProviders":{
+        "azureActiveDirectory": {
+          "registration": {
+            "openIdIssuer": "https://login.microsoftonline.com/999c7579-2079-4114-a6f4-c8d894831b33/v2.0",
+            "clientIdSettingName": "AZURE_CLIENT_ID",
+            "clientSecretSettingName": "AZURE_CLIENT_SECRET"
+          }
         }
       }
-    }
   },
-  "navigationFallback": {
-        "rewrite": "/index.html"
-    }
-    ,
-      "responseOverrides": {
-        "401":
-        {
-          "statusCode": 302,
-          "redirect": "/login"
-        }
-      }
+  "globalHeaders": {
+      "Cache-Control": "no-cache"
+  }
 }
