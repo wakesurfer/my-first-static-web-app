@@ -1,7 +1,7 @@
 {
   "routes": [
       {
-          "route": "/*",
+          "route": "/authenticated/*",
           "allowedRoles": [ "authenticated" ]
       }
   ],
@@ -15,7 +15,7 @@
       "identityProviders":{
         "azureActiveDirectory": {
           "registration": {
-            "openIdIssuer": "https://login.microsoftonline.com/f84f6fe6-b0e4-4db1-b7d6-b7c280fb507f/v2.0/",
+            "openIdIssuer": "https://login.microsoftonline.com/f84f6fe6-b0e4-4db1-b7d6-b7c280fb507f/v2.0",
             "clientIdSettingName": "AZURE_CLIENT_ID",
             "clientSecretSettingName": "AZURE_CLIENT_SECRET"
           }
